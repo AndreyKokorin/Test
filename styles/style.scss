@@ -457,6 +457,7 @@ li{
         color: #000000;
         padding-bottom: 20px;
     }
+
     &__item{
         background: #FFFFFF;
         padding-top: 26px;
@@ -496,6 +497,38 @@ li{
                 left: 50px;
                 z-index: 5;
                 border-radius: 16px;
+                display: none;
+            }
+        }
+        &-mobileSticks{
+            display: flex;
+            gap: 16px;
+            display: none;
+            padding: 18px 0;
+            .veb{
+                border-radius: 16px;
+                background: #FFAE34;
+                color: #FFF;
+                padding: 2px 16px;
+                font-size: 14px;
+                font-family: PT Sans;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+            }
+            .conv{
+                padding: 2px 16px;
+                border-radius: 16px;
+                background: rgba(27, 41, 171, 0.70);
+                color: #FFF;
+                font-size: 14px;
+                font-family: PT Sans;
+                font-weight: 700;
+            }
+            @media (max-width: 768px) {
+                display: flex;
             }
         }
         &-text{
@@ -517,7 +550,7 @@ li{
                 @media (max-width: 768px) {
                     min-width: 300px;
                     font-size: 18px;
-                    padding-bottom: 54px;
+                    padding-bottom: 0;
                 }
                 @media (max-width: 768px) {
                     max-width: 405px;
@@ -536,6 +569,12 @@ li{
                     min-width: 300px;
                     font-size: 14px;
                 }
+            }
+            .spikers{
+                color: #BBB;
+                font-size: 14px;
+                font-family: PT Sans;
+                padding-top: 16px;
             }
             .stikers{
                 display: flex;
@@ -584,6 +623,7 @@ li{
                     border-radius: 16px;
                     top: -50px;
                     left: 160px;
+                    display: none;  
                 }
                 
             }
@@ -667,6 +707,12 @@ li{
                 display: flex;
                 .footer__btn{
                     display: block;
+                    width: 13px;
+                    height: 9px;
+                    img{
+                        width: 13px;
+                        height: 9px;
+                    }
                 }
             }
             /* text-align: center; */
